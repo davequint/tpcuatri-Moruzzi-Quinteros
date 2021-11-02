@@ -5,6 +5,6 @@
   
     <h2><%: Title %></h2> 
     <br />
-    <asp:Button Text="Listar" OnClick="btnAceptar_Click" runat="server" />
+    <asp:Button Text="Listar" OnClick="Click" runat="server" />
     <asp:GridView ID="dgvProductos" runat="server"></asp:GridView>
 </asp:Content>
