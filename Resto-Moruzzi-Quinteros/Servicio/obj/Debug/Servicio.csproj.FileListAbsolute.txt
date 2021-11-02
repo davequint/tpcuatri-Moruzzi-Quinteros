@@ -1,0 +1,9 @@
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Servicio\bin\Debug\Servicio.dll
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Servicio\bin\Debug\Servicio.pdb
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Servicio\bin\Debug\Dominio.dll
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Servicio\bin\Debug\Dominio.pdb
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Servicio\obj\Debug\Servicio.csproj.AssemblyReference.cache
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Servicio\obj\Debug\Servicio.csproj.CoreCompileInputs.cache
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Servicio\obj\Debug\Servicio.csproj.CopyComplete
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Servicio\obj\Debug\Servicio.dll
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Servicio\obj\Debug\Servicio.pdb

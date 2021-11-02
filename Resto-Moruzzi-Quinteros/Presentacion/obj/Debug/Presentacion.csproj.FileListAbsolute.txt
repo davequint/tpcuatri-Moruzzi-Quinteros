@@ -1,0 +1,6 @@
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Presentacion\bin\Debug\Presentacion.dll
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Presentacion\obj\Debug\Presentacion.dll
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Presentacion\obj\Debug\Presentacion.pdb

@@ -73,3 +73,10 @@ C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Rest
 C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Web\obj\Debug\Web.csproj.CoreCompileInputs.cache
 C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Web\obj\Debug\Web.dll
 C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Web\obj\Debug\Web.pdb
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Web\bin\Dominio.dll
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Web\bin\Presentacion.dll
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Web\bin\Servicio.dll
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Web\bin\Dominio.pdb
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Web\bin\Presentacion.pdb
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Web\bin\Servicio.pdb
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Web\obj\Debug\Web.csproj.CopyComplete
