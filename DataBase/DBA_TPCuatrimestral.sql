@@ -15,4 +15,16 @@ CREATE TABLE Producto(
     Estado BIT NOT NULL, 
     DescripcionPlato VARCHAR(50) NOT NULL,
 )
-
+go
+CREATE TABLE MetodoPago(
+    Id char PRIMARY KEY NOT NULL,
+    Descripcion VARCHAR(20) NOT NULL UNIQUE,
+)
+go
+CREATE TABLE DatosPersonales(
+    Usuario VARCHAR(25) PRIMARY KEY NOT NULL,
+    Nombre VARCHAR(20) NOT NULL,
+    Apellido VARCHAR(20) NOT NULL,
+    FechaNacimiento DATETIME NOT NULL,
+    FechaIngreso DATETIME NOT NULL,
+)

@@ -6,3 +6,4 @@ C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Rest
 C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Servicio\obj\Debug\Servicio.csproj.CoreCompileInputs.cache
 C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Servicio\obj\Debug\Servicio.dll
 C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Servicio\obj\Debug\Servicio.pdb
+C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Servicio\obj\Debug\Servicio.csproj.CopyComplete

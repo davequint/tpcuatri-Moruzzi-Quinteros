@@ -13,6 +13,7 @@
         <!-->
         <asp:Label ID="lblIdTipoProduco" runat="server" Text="Tipo de Producto"></asp:Label>
         <asp:TextBox ID="txbIdTipoProducto" runat="server"></asp:TextBox>
+        <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
     </div>
     <div>
         <asp:Label ID="lblPrecio" runat="server" Text="Precio"></asp:Label>

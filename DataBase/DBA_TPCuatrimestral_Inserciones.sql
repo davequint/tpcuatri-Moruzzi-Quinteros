@@ -77,5 +77,9 @@ INSERT INTO Producto(IdTipoProducto,Precio,Stock,Estado,DescripcionPlato) VALUES
 INSERT INTO Producto(IdTipoProducto,Precio,Stock,Estado,DescripcionPlato) VALUES(6,480,50,1,'Tiramisu')
 INSERT INTO Producto(IdTipoProducto,Precio,Stock,Estado,DescripcionPlato) VALUES(6,480,50,1,'Cheesecake Oreo')
 INSERT INTO Producto(IdTipoProducto,Precio,Stock,Estado,DescripcionPlato) VALUES(6,480,50,1,'Cheesecake Frutos Rojos')
+--Metodo Pago
+INSERT INTO MetodoPago(ID,Descripcion) VALUES('D','Debito');
+INSERT INTO MetodoPago(ID,Descripcion) VALUES('T','Tarjeta');
+INSERT INTO MetodoPago(ID,Descripcion) VALUES('E','Efectivo');
 
 

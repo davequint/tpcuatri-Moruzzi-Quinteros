@@ -42,6 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Accesodatos.cs" />
+    <Compile Include="DatosPersonalesServicio.cs" />
+    <Compile Include="MetodoDePagoServicio.cs" />
     <Compile Include="ProductoServicio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TipoDeProductoServicio.cs" />
