@@ -42,5 +42,10 @@ namespace Servicio
                 datos.cerrarConexion();
             }
         }
+
+        public void agregar()
+        {
+
+        }
     }
 }

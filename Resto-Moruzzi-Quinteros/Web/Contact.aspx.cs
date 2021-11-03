@@ -12,23 +12,31 @@ namespace Web
 {
     public partial class Contact : Page
     {
-        private List<Producto> listaProducto;
+       
         
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void Click(object sender, EventArgs e)
+        protected void btnAgregar_Click(object sender, EventArgs e)
         {
+            Response.Redirect("AgregarProducto.aspx");
+        }
 
-            Producto producto = new Producto();
-            ProductoServicio productoServicio = new ProductoServicio();
+        protected void btnListar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ListarProductos.aspx");
+        }
 
-            
-            listaProducto = productoServicio.listar();
-            dgvProductos.DataSource = listaProducto;
-            dgvProductos.DataBind();
+        protected void btnModificarProducto_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ModificarProducto.aspx");
+        }
+
+        protected void btnEliminarProducto_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("EliminarProducto.aspx");
         }
     }
 }
