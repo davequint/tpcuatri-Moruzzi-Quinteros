@@ -19,5 +19,10 @@ namespace Web.ABM_aspx.Listar
             dgvTipoDeProducto.DataSource = listaTipoDeProductos;
             dgvTipoDeProducto.DataBind();
         }
+
+        protected void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../../Contact.aspx");
+        }
     }
 }

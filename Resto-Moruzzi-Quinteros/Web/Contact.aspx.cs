@@ -6,7 +6,6 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Dominio;
 using Servicio;
-using Presentacion;
 
 namespace Web
 {
@@ -48,6 +47,16 @@ namespace Web
         protected void btnAgregarTipo_Click(object sender, EventArgs e)
         {
             Response.Redirect("ABM%20aspx/Agregar/AgregarTipoProducto.aspx");
+        }
+
+        protected void btnModificarTipo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ABM%20aspx/Modificar/ModificarTipoProducto.aspx");
+        }
+
+        protected void btnEliminarTipo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ABM%20aspx/Eliminar/EliminarTipoProducto.aspx");                
         }
     }
 }

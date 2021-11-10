@@ -10,5 +10,6 @@ namespace Dominio
     {
         public int IdTipoProducto { get; set; }
         public String Descripcion { get; set; }
+        public Boolean Estado { get; set; }
     }
 }

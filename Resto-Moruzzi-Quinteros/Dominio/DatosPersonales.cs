@@ -13,5 +13,8 @@ namespace Dominio
         public String Apellido { get; set; }
         public DateTime FechaNac { get; set; }
         public DateTime FechaIngreso { get; set; }
+        public Boolean Estado { get; set; }
+
     }
 }
+

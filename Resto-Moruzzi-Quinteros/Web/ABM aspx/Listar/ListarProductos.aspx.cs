@@ -25,5 +25,10 @@ namespace Web
             dgvTipoDeProducto.DataSource = listaTipoDeProductos;
             dgvTipoDeProducto.DataBind();
         }
+
+        protected void btnVolver_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../../Contact.aspx");
+        }
     }
 }

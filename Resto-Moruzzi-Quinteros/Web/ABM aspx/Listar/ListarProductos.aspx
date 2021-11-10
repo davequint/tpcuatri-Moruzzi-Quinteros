@@ -13,6 +13,6 @@
         </div>
     </div>
     <br />
-    <a href="../../Contact.aspx">Volver</a>
-
+    <asp:Button Text="Volver" ID="btnVolver" runat="server" OnClick="btnVolver_Click" />
+    
 </asp:Content>

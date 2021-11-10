@@ -15,7 +15,7 @@ namespace Servicio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("SELECT Pr.Codigo,Pr.IdTipoProducto,Pr.Precio,Pr.Stock,Pr.Estado,Pr.DescripcionPlato FROM Producto as Pr");
+                datos.setearConsulta("SELECT Pr.Codigo, Pr.IdTipoProducto, Pr.Precio, Pr.Stock, Pr.DescripcionPlato FROM Producto as Pr where Estado = 1");
                 datos.ejecutarLectura();
 
                 while(datos.Lector.Read())
@@ -25,7 +25,6 @@ namespace Servicio
                     aux.IdTipoProducto = (int)datos.Lector["IdTipoProducto"];
                     aux.Precio = (decimal)datos.Lector["Precio"];
                     aux.Stock = (int)datos.Lector["Stock"];
-                    aux.Estado = (bool)datos.Lector["Estado"];
                     aux.DescripcionPlato = (string)datos.Lector["DescripcionPlato"];
 
                     lista.Add(aux);

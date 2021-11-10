@@ -105,7 +105,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ABM aspx\Eliminar\EliminarTipoProducto.aspx" />
     <Content Include="ABM aspx\Listar\ListarTipoProducto.aspx" />
+    <Content Include="ABM aspx\Modificar\ModificarTipoProducto.aspx" />
     <Content Include="About.aspx" />
     <Content Include="ABM aspx\Agregar\AgregarProducto.aspx" />
     <Content Include="ABM aspx\Agregar\AgregarTipoProducto.aspx" />
@@ -182,12 +184,26 @@
     <Compile Include="ABM aspx\Agregar\AgregarTipoProducto.aspx.designer.cs">
       <DependentUpon>AgregarTipoProducto.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ABM aspx\Eliminar\EliminarTipoProducto.aspx.cs">
+      <DependentUpon>EliminarTipoProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABM aspx\Eliminar\EliminarTipoProducto.aspx.designer.cs">
+      <DependentUpon>EliminarTipoProducto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ABM aspx\Listar\ListarTipoProducto.aspx.cs">
       <DependentUpon>ListarTipoProducto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ABM aspx\Listar\ListarTipoProducto.aspx.designer.cs">
       <DependentUpon>ListarTipoProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ABM aspx\Modificar\ModificarTipoProducto.aspx.cs">
+      <DependentUpon>ModificarTipoProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABM aspx\Modificar\ModificarTipoProducto.aspx.designer.cs">
+      <DependentUpon>ModificarTipoProducto.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
@@ -280,10 +296,6 @@
     <ProjectReference Include="..\Dominio\Dominio.csproj">
       <Project>{fb495283-42f5-45ed-a915-1a892cb9813a}</Project>
       <Name>Dominio</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Presentacion\Presentacion.csproj">
-      <Project>{172edd95-ee51-4363-ad2d-3aaa6b560826}</Project>
-      <Name>Presentacion</Name>
     </ProjectReference>
     <ProjectReference Include="..\Servicio\Servicio.csproj">
       <Project>{bea58433-b7db-412b-8159-abe572a0886a}</Project>

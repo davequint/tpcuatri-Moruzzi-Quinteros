@@ -16,8 +16,14 @@
     
     </div>
     <br />  
-    <div>
-    <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click"  />
+    <div style="display:flex">
+        <div style="padding-right:40px">
+            <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" OnClick="btnAceptar_Click"  />
+        </div>
+        <div>
+            <asp:Button ID="btnCancelar" Text="Cancelar" OnClick="btnCancelar_Click" runat="server" />
+        </div>
+    
     </div>
 
 

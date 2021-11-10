@@ -7,38 +7,38 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Web
+namespace Web.ABM_aspx.Eliminar
 {
 
 
-    public partial class ListarProductos
+    public partial class EliminarTipoProducto
     {
 
         /// <summary>
-        /// Control dgvProductos.
+        /// Control ddlTipo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dgvProductos;
+        protected global::System.Web.UI.WebControls.DropDownList ddlTipo;
 
         /// <summary>
-        /// Control dgvTipoDeProducto.
+        /// Control btnEliminar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dgvTipoDeProducto;
+        protected global::System.Web.UI.WebControls.Button btnEliminar;
 
         /// <summary>
-        /// Control btnVolver.
+        /// Control btnCancelar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnVolver;
+        protected global::System.Web.UI.WebControls.Button btnCancelar;
     }
 }

@@ -9,8 +9,9 @@
         </div>
     </div>
     <br />
-    <a href="../../Contact.aspx">Volver</a>
-
+    <div>
+        <asp:Button ID="btnCancelar" Text="Volver" OnClick="btnCancelar_Click" runat="server" />
+    </div>
 
 
 
