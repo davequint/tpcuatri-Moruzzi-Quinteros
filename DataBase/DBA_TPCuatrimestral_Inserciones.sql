@@ -1,11 +1,11 @@
 USE TpCuatrimestralMoruzziQuinteros
 --Tipo de producto
-INSERT INTO TipoDeProducto(Id, Descripcion) VALUES (1,'Bebida sin alcohol')
-INSERT INTO TipoDeProducto(Id, Descripcion) VALUES (2,'Bebida con alcohol')
-INSERT INTO TipoDeProducto(Id, Descripcion) VALUES (3,'Entrada')
-INSERT INTO TipoDeProducto(Id, Descripcion) VALUES (4,'Menu infantil')
-INSERT INTO TipoDeProducto(Id, Descripcion) VALUES (5,'Plato principal')
-INSERT INTO TipoDeProducto(Id, Descripcion) VALUES (6,'Postre')
+INSERT INTO TipoDeProducto(Descripcion) VALUES ('Bebida sin alcohol')
+INSERT INTO TipoDeProducto(Descripcion) VALUES ('Bebida con alcohol')
+INSERT INTO TipoDeProducto(Descripcion) VALUES ('Entrada')
+INSERT INTO TipoDeProducto(Descripcion) VALUES ('Menu infantil')
+INSERT INTO TipoDeProducto(Descripcion) VALUES ('Plato principal')
+INSERT INTO TipoDeProducto(Descripcion) VALUES ('Postre')
 --Producto
 INSERT INTO Producto(IdTipoProducto,Precio,Stock,Estado,DescripcionPlato) VALUES(1,190,100,1,'Gaseosa Coca-Cola 500ml')
 INSERT INTO Producto(IdTipoProducto,Precio,Stock,Estado,DescripcionPlato) VALUES(1,320,200,1,'Gaseosa Coca-Cola 1.75L')
@@ -81,5 +81,3 @@ INSERT INTO Producto(IdTipoProducto,Precio,Stock,Estado,DescripcionPlato) VALUES
 INSERT INTO MetodoPago(ID,Descripcion) VALUES('D','Debito');
 INSERT INTO MetodoPago(ID,Descripcion) VALUES('T','Tarjeta');
 INSERT INTO MetodoPago(ID,Descripcion) VALUES('E','Efectivo');
-
-

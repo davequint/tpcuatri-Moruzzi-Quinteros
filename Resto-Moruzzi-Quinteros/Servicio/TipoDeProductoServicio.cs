@@ -39,6 +39,37 @@ namespace Servicio
             }
         }
 
+        public void agregar(TipoDeProducto nuevo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("INSERT INTO TipoDeProducto(Descripcion) VALUES(@Descripcion)");
+                datos.setearParametro("@Descripcion", nuevo.Descripcion);
+
+                datos.ejecutarAccion();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        
+        }
+
+        public void modificar()
+        {
+
+        }
+        public void eliminar()
+        {
+
+        }
 
     }
 }

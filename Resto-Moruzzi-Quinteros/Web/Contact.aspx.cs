@@ -12,31 +12,42 @@ namespace Web
 {
     public partial class Contact : Page
     {
-       
-        
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-        protected void btnAgregar_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("AgregarProducto.aspx");
-        }
-
+        //------------------Producto------------------
         protected void btnListar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ListarProductos.aspx");
+            Response.Redirect("ABM%20aspx/Listar/ListarProductos");
+        }
+
+
+        protected void btnAgregar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ABM%20aspx/Agregar/AgregarProducto.aspx");
         }
 
         protected void btnModificarProducto_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ModificarProducto.aspx");
+            Response.Redirect("ABM%20aspx/Modificar/ModificarProducto.aspx");
         }
 
         protected void btnEliminarProducto_Click(object sender, EventArgs e)
         {
-            Response.Redirect("EliminarProducto.aspx");
+            Response.Redirect("ABM%20aspx/Eliminar/EliminarProducto.aspx");
+        }
+
+        //------------------Tipo Producto------------------
+        protected void btnListarTipo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ABM%20aspx/Listar/ListarTipoProducto.aspx");
+        }
+
+        protected void btnAgregarTipo_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ABM%20aspx/Agregar/AgregarTipoProducto.aspx");
         }
     }
 }

@@ -4,6 +4,6 @@
     <br />
     <h2>Elimar Producto</h2>
     <br />
-    <a href="Contact.aspx">Cancelar</a>
+    <a href="../../Contact.aspx">Cancelar</a>
 
 </asp:Content>

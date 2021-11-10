@@ -4,5 +4,5 @@
     <br />
     <h2>Modificar producto existente</h2>
     <br />
-    <a href="Contact.aspx">Cancelar</a>
+    <a href="../../Contact.aspx">Cancelar</a>
 </asp:Content>

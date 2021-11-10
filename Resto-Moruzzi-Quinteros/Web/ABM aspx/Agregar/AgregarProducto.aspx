@@ -34,7 +34,7 @@
        a la funcion agregar() de ProductoServicio.
     <!-->
     <asp:Button ID="btnAceptar" OnClick="btnAceptar_Click" runat="server" Text="Aceptar" />
-    <a href="Contact.aspx">Cancelar</a>
+    <a href="../../Contact.aspx">Cancelar</a>
         
 
 </asp:Content>

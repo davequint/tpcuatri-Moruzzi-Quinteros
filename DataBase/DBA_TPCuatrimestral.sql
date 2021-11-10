@@ -3,7 +3,7 @@ GO
 USE TpCuatrimestralMoruzziQuinteros
 GO
 CREATE TABLE TipoDeProducto(
-     Id INT PRIMARY KEY NOT NULL,
+     Id INT PRIMARY KEY NOT NULL Identity(1,1),
      Descripcion VARCHAR(50) NOT NULL,
 )
 GO
@@ -17,7 +17,7 @@ CREATE TABLE Producto(
 )
 go
 CREATE TABLE MetodoPago(
-    Id char PRIMARY KEY NOT NULL,
+    Id char PRIMARY KEY NOT NULL ,
     Descripcion VARCHAR(20) NOT NULL UNIQUE,
 )
 go
@@ -28,3 +28,4 @@ CREATE TABLE DatosPersonales(
     FechaNacimiento DATETIME NOT NULL,
     FechaIngreso DATETIME NOT NULL,
 )
+

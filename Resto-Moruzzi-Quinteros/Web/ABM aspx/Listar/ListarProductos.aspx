@@ -13,6 +13,6 @@
         </div>
     </div>
     <br />
-    <a href="Contact.aspx">Volver</a>
+    <a href="../../Contact.aspx">Volver</a>
 
 </asp:Content>

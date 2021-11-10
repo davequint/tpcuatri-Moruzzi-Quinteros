@@ -105,8 +105,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ABM aspx\Listar\ListarTipoProducto.aspx" />
     <Content Include="About.aspx" />
-    <Content Include="AgregarProducto.aspx" />
+    <Content Include="ABM aspx\Agregar\AgregarProducto.aspx" />
+    <Content Include="ABM aspx\Agregar\AgregarTipoProducto.aspx" />
     <Content Include="Contact.aspx">
       <BrowseToURL>~/Contact.aspx</BrowseToURL>
     </Content>
@@ -116,7 +118,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
-    <Content Include="EliminarProducto.aspx" />
+    <Content Include="ABM aspx\Eliminar\EliminarProducto.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -129,8 +131,8 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="ListarProductos.aspx" />
-    <Content Include="ModificarProducto.aspx" />
+    <Content Include="ABM aspx\Listar\ListarProductos.aspx" />
+    <Content Include="ABM aspx\Modificar\ModificarProducto.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -166,12 +168,26 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AgregarProducto.aspx.cs">
+    <Compile Include="ABM aspx\Agregar\AgregarProducto.aspx.cs">
       <DependentUpon>AgregarProducto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AgregarProducto.aspx.designer.cs">
+    <Compile Include="ABM aspx\Agregar\AgregarProducto.aspx.designer.cs">
       <DependentUpon>AgregarProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ABM aspx\Agregar\AgregarTipoProducto.aspx.cs">
+      <DependentUpon>AgregarTipoProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABM aspx\Agregar\AgregarTipoProducto.aspx.designer.cs">
+      <DependentUpon>AgregarTipoProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ABM aspx\Listar\ListarTipoProducto.aspx.cs">
+      <DependentUpon>ListarTipoProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ABM aspx\Listar\ListarTipoProducto.aspx.designer.cs">
+      <DependentUpon>ListarTipoProducto.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
@@ -196,28 +212,28 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="EliminarProducto.aspx.cs">
+    <Compile Include="ABM aspx\Eliminar\EliminarProducto.aspx.cs">
       <DependentUpon>EliminarProducto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="EliminarProducto.aspx.designer.cs">
+    <Compile Include="ABM aspx\Eliminar\EliminarProducto.aspx.designer.cs">
       <DependentUpon>EliminarProducto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="ListarProductos.aspx.cs">
+    <Compile Include="ABM aspx\Listar\ListarProductos.aspx.cs">
       <DependentUpon>ListarProductos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ListarProductos.aspx.designer.cs">
+    <Compile Include="ABM aspx\Listar\ListarProductos.aspx.designer.cs">
       <DependentUpon>ListarProductos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ModificarProducto.aspx.cs">
+    <Compile Include="ABM aspx\Modificar\ModificarProducto.aspx.cs">
       <DependentUpon>ModificarProducto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ModificarProducto.aspx.designer.cs">
+    <Compile Include="ABM aspx\Modificar\ModificarProducto.aspx.designer.cs">
       <DependentUpon>ModificarProducto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
