@@ -28,3 +28,9 @@ CREATE TABLE DatosPersonales(
     FechaNacimiento DATETIME NOT NULL,
     FechaIngreso DATETIME NOT NULL,
 )
+go
+CREATE TABLE Usuarios(
+	Usuario VARCHAR(25) PRIMARY KEY FOREIGN KEY REFERENCES DatosPersonales(Usuario),
+	Contrasena VARCHAR(10) NOT NULL,
+	Tipo BIT NOT NULL,
+)

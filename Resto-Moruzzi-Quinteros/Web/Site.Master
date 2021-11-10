@@ -54,7 +54,10 @@
                         <li><a runat="server" href="~/">Inicio</a></li>
                         <li><a runat="server" href="~/About">Mesas</a></li>
                         <li><a runat="server" href="~/Contact">Productos</a></li>
-                        <li><a runat="server" href="~/Contact">Meseros</a></li>
+                        <li><a runat="server" href="~/">Meseros</a></li>
+                        <li><a runat="server" href="~/AgregarUsuario">Usuarios</a></li>
+
+
                     </ul>
                 </div>
             </div>
