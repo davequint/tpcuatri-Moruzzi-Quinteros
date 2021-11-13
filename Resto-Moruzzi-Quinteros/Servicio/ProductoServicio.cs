@@ -91,8 +91,25 @@ namespace Servicio
 
         }
 
-        public void Eliminar(Producto productoEliminado)
-        { 
+        public void Eliminar(int codigoEliminado)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("update Producto SET Estado = 0 where Codigo = @Codigo");
+                datos.setearParametro("@Codigo", codigoEliminado);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+
         }
     }
 }

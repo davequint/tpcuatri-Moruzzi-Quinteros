@@ -48,22 +48,30 @@ namespace Web
         }
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
-            Producto producto = new Producto();
-            ProductoServicio productoServicio = new ProductoServicio();
-            producto.Codigo = int.Parse(ddlProducto.SelectedItem.Value);
-            producto.DescripcionPlato = txtNombre.Text;
-            producto.Precio = int.Parse(txbPrecio.Text);
-            producto.Stock = int.Parse(txtStock.Text);
-            if(producto.Stock <=0)
+            try
             {
-                producto.Estado = false;
+                Producto producto = new Producto();
+                ProductoServicio productoServicio = new ProductoServicio();
+                producto.Codigo = int.Parse(ddlProducto.SelectedItem.Value);
+                producto.DescripcionPlato = txtNombre.Text;
+                producto.Precio = int.Parse(txbPrecio.Text);
+                producto.Stock = int.Parse(txtStock.Text);
+                if(producto.Stock <=0)
+                {
+                    producto.Estado = false;
+                }
+                else
+                {
+                    producto.Estado = true;
+                }
+                producto.IdTipoProducto = int.Parse(ddlTipoProducto.SelectedItem.Value);
+                productoServicio.modificar(producto);
             }
-            else
+            catch (Exception ex)
             {
-                producto.Estado = true;
+
+                throw ex;
             }
-            producto.IdTipoProducto = int.Parse(ddlTipoProducto.SelectedItem.Value);
-            productoServicio.modificar(producto);
         }
     }
 }

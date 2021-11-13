@@ -77,4 +77,3 @@ C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Rest
 C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Web\bin\Servicio.dll
 C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Web\bin\Dominio.pdb
 C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Web\bin\Servicio.pdb
-C:\Users\julia\OneDrive\Escritorio\Nueva carpeta\tpcuatri-Moruzzi-Quinteros\Resto-Moruzzi-Quinteros\Web\obj\Debug\Web.csproj.CopyComplete
