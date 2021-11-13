@@ -4,6 +4,8 @@
     <br />
     <h2>Elimar Producto</h2>
     <br />
-    <a href="../../Contact.aspx">Cancelar</a>
+    <asp:Button ID="btnAceptar" Text="Aceptar" OnClick="btnAceptar_Click" runat="server" />
+    <asp:Button ID="btnCancelar" Text="Cancelar" OnClick="btnCancelar_Click" runat="server" />
+    
 
 </asp:Content>

@@ -51,7 +51,7 @@ namespace Servicio
                 while (datos.Lector.Read())
                 {
                     TipoDeProducto aux = new TipoDeProducto();
-                    aux.Descripcion = (string)datos.Lector["Descripcion"];
+                    aux.Descripcion =(string)datos.Lector["Descripcion"].ToString();
 
                     lista.Add(aux);
                 }
@@ -74,22 +74,17 @@ namespace Servicio
             {
                 datos.setearConsulta("INSERT INTO TipoDeProducto(Descripcion) VALUES(@Descripcion)");
                 datos.setearParametro("@Descripcion", nuevo.Descripcion);
-
                 datos.ejecutarAccion();
-
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
             finally
             {
                 datos.cerrarConexion();
             }
-
         }
-    
         public void modificar(TipoDeProducto modificado)
         {
             AccesoDatos datos = new AccesoDatos();

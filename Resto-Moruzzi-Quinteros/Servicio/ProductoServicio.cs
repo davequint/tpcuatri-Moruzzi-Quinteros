@@ -17,6 +17,7 @@ namespace Servicio
             {
                 datos.setearConsulta("SELECT Pr.Codigo, Pr.IdTipoProducto, Pr.Precio, Pr.Stock, Pr.DescripcionPlato FROM Producto as Pr where Estado = 1");
                 datos.ejecutarLectura();
+                
 
                 while(datos.Lector.Read())
                 {
@@ -41,10 +42,57 @@ namespace Servicio
                 datos.cerrarConexion();
             }
         }
-
-        public void agregar()
+        public void agregar(Producto newProducto)
         {
+            AccesoDatos accesoDatos = new AccesoDatos();
+            try
+            {
+                accesoDatos.setearConsulta("insert into Producto(IdTipoProducto, Precio, Stock, Estado, DescripcionPlato) values(@IdTipoProducto, @Precio, @Stock, @Estado, @DescripcionPlato)");
+                accesoDatos.setearParametro("@IdTipoProducto",newProducto.IdTipoProducto);
+                accesoDatos.setearParametro("@Precio", newProducto.Precio);
+                accesoDatos.setearParametro("@Stock",newProducto.Stock);
+                accesoDatos.setearParametro("@Estado",newProducto.Estado);
+                accesoDatos.setearParametro("@DescripcionPlato",newProducto.DescripcionPlato);           
+                accesoDatos.ejecutarAccion();    
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                accesoDatos.cerrarConexion();
+            }
+        }
 
+        public void modificar(Producto productoModificado)
+        {
+            AccesoDatos accesoDatos = new AccesoDatos();
+            try
+            {
+                accesoDatos.setearConsulta("update Producto set IdTipoProducto = @IdTipoProducto, Precio = @Precio, Stock = @Stock, Estado=@Estado, DescripcionPlato=@DescripcionPlato where Codigo=@Codigo");
+                accesoDatos.setearParametro("@IdTipoProducto", productoModificado.IdTipoProducto);
+                accesoDatos.setearParametro("@Precio",productoModificado.Precio);
+                accesoDatos.setearParametro("@Stock",productoModificado.Stock);
+                accesoDatos.setearParametro("@Estado",productoModificado.Estado);
+                accesoDatos.setearParametro("@DescripcionPlato",productoModificado.DescripcionPlato);
+                accesoDatos.setearParametro("@Codigo",productoModificado.Codigo);
+                accesoDatos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                accesoDatos.cerrarConexion();
+            }
+
+        }
+
+        public void Eliminar(Producto productoEliminado)
+        { 
         }
     }
 }

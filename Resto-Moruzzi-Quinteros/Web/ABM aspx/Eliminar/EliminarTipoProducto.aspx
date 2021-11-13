@@ -9,7 +9,7 @@
         </div>
         <br />
         <div>
-            <asp:DropDownList Id="ddlTipo" AutoPostBack="true" runat="server"> </asp:DropDownList>
+            <asp:DropDownList Id="ddlTipo" AutoPostBack="false" runat="server"> </asp:DropDownList>
         </div>
         <br />
 

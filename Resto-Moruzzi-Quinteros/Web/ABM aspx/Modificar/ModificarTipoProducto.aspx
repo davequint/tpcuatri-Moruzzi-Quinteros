@@ -11,7 +11,7 @@
     <asp:DropDownList ID="ddlTipos"  runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlTipos_SelectedIndexChanged"></asp:DropDownList>
     </div>
     <br />
-    <asp:Label Text="Ingrese los datos nuevos para el Tipo de Producto seleccionado:" runat="server" />
+    <asp:Label Text="Ingrese el nuevo nombre para el Tipo de Producto seleccionado:" runat="server" />
     <br />
     <br />
     <div>

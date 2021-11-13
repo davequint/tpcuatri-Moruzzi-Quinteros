@@ -15,34 +15,34 @@ namespace Web.ABM_aspx.Eliminar
         protected void Page_Load(object sender, EventArgs e)
         {
             TipoDeProductoServicio tipoServicio = new TipoDeProductoServicio();
-
             if (!IsPostBack)
             {
-                ddlTipo.DataSource = tipoServicio.listarConDDL();
+                List<TipoDeProducto> listTipo = tipoServicio.listarConDDL();
+
+                ddlTipo.DataSource = listTipo;
+                ddlTipo.DataTextField = "Descripcion";
+                ddlTipo.DataValueField = "IdTipoProducto";
                 ddlTipo.DataBind();
             }
-
         }
-
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
            /* Falta corregir el drowDownlist para poder probar si elimina o no.
-            * Comente la funcionalidad para evitar romper algo haciendo click en aceptar.
+            * Comente la funcionalidad para evitar romper algo haciendo click en aceptar.*/
 
             TipoDeProducto tipo = new TipoDeProducto();
             TipoDeProductoServicio servicio = new TipoDeProductoServicio();
             try
             {
-                tipo.IdTipoProducto = ddlTipo.SelectedIndex;
-
+                
+                int idPrueba=int.Parse(ddlTipo.SelectedItem.Value);
+                tipo.IdTipoProducto = idPrueba;
                 servicio.eliminar(tipo);
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
-           */
         }
 
         protected void btnCancelar_Click(object sender, EventArgs e)

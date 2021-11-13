@@ -14,13 +14,17 @@ namespace Web.ABM_aspx.Modificar
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            txtNombre.Enabled = false;
             TipoDeProductoServicio tipoServicio = new TipoDeProductoServicio();
             try
             {
                 if (!IsPostBack)
                 {
-                    ddlTipos.DataSource = tipoServicio.listarConDDL();
+                   // txtNombre.Enabled = false;
+                    List<TipoDeProducto> listTipo = tipoServicio.listar();
+
+                    ddlTipos.DataSource = listTipo;
+                    ddlTipos.DataTextField = "Descripcion";
+                    ddlTipos.DataValueField = "IdTipoProducto";
                     ddlTipos.DataBind();
                 }
             }
@@ -39,29 +43,25 @@ namespace Web.ABM_aspx.Modificar
 
         protected void btnAceptar_Click(object sender, EventArgs e)
         {
-            /*
-             * Falta corregir el drowDownlist para poder probar si modifica o no.
-             * Comente la funcionalidad para evitar romper algo haciendo click en aceptar.
-             * 
             TipoDeProducto tipo = new TipoDeProducto();
             TipoDeProductoServicio servicio = new TipoDeProductoServicio();
             try
             {
                 tipo.Descripcion = txtNombre.Text;
-                tipo.IdTipoProducto = ddlTipos.SelectedIndex;
-
+                tipo.IdTipoProducto = int.Parse(ddlTipos.SelectedItem.Value);
                 servicio.modificar(tipo);
-
+               
             }
             catch (Exception ex)
             {
-
                 throw ex;
-            }*/
+            }
         }
 
         protected void ddlTipos_SelectedIndexChanged(object sender, EventArgs e)
-        {   
+        {
+            txtNombre.Enabled = true;
+
         }
         protected void ddlTipos_TextChanged(object sender, EventArgs e)
         {    
