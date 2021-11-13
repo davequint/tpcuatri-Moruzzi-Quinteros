@@ -8,7 +8,7 @@ using Servicio;
 
 namespace Servicio
 {
-    class DatosPersonalesServicio
+    public class DatosPersonalesServicio
     {
         public List<DatosPersonales> listar()
         {
@@ -25,7 +25,7 @@ namespace Servicio
                     aux.NombreUsuario = (String)datos.Lector["Nombre"];
                     aux.NombreUsuario = (String)datos.Lector["Apellido"];
                     aux.FechaNac = (DateTime)datos.Lector["FechaNacimiento"];
-                    aux.FechaNac = (DateTime)datos.Lector["FechaIngreso"];
+                    aux.FechaIngreso = (DateTime)datos.Lector["FechaIngreso"];
 
                     lista.Add(aux);
                 }
@@ -41,5 +41,27 @@ namespace Servicio
                 datos.cerrarConexion();
             }
         }
+
+        public void agregar(DatosPersonales nuevo)
+        {
+            AccesoDatos data = new AccesoDatos();
+            try
+            {
+                data.setearConsulta("INSERT INTO DatosPersonales(Usuario,Nombre,Apellido,FechaNacimiento,FechaIngreso) values ('" + nuevo.NombreUsuario + "','" + nuevo.Nombre + "','" + nuevo.Apellido + nuevo.FechaNac + "'," + nuevo.FechaIngreso + ")");
+
+                data.ejecutarAccion();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                data.cerrarConexion();
+            }
+        }
+
     }
 }
