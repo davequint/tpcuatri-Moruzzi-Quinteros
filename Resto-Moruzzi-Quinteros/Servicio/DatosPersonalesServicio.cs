@@ -25,7 +25,7 @@ namespace Servicio
                     aux.NombreUsuario = (String)datos.Lector["Nombre"];
                     aux.NombreUsuario = (String)datos.Lector["Apellido"];
                     aux.FechaNac = (DateTime)datos.Lector["FechaNacimiento"];
-                    aux.FechaIngreso = (DateTime)datos.Lector["FechaIngreso"];
+                    aux.FechaNac = (DateTime)datos.Lector["FechaIngreso"];
 
                     lista.Add(aux);
                 }
@@ -47,8 +47,12 @@ namespace Servicio
             AccesoDatos data = new AccesoDatos();
             try
             {
-                data.setearConsulta("INSERT INTO DatosPersonales(Usuario,Nombre,Apellido,FechaNacimiento,FechaIngreso) values ('" + nuevo.NombreUsuario + "','" + nuevo.Nombre + "','" + nuevo.Apellido + nuevo.FechaNac + "'," + nuevo.FechaIngreso + ")");
-
+                data.setearConsulta("INSERT INTO DatosPersonales(Usuario,Nombre,Apellido,FechaNacimiento,FechaIngreso) values (@NombreUsuario , @Nombre,@Apellido, @FechaNacimiento,@FechaIngreso)");
+                data.setearParametro("@NombreUsuario", nuevo.NombreUsuario);
+                data.setearParametro("@Nombre", nuevo.Nombre);
+                data.setearParametro("@Apellido", nuevo.Apellido);
+                data.setearParametro("@FechaNacimiento", nuevo.FechaNac);
+                data.setearParametro("@FechaIngreso", nuevo.FechaIngreso);
                 data.ejecutarAccion();
 
             }

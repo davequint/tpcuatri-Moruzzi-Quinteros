@@ -66,8 +66,7 @@ namespace Servicio
 
         public void cerrarConexion()
         {
-            if (lector != null)
-                lector.Close();
+            if (lector != null)lector.Close();
             conexion.Close();
         }
 
